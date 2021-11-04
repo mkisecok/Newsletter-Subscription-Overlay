@@ -10,7 +10,7 @@
 </head>
 <body>
    <!-- Button trigger modal -->
-<button type="button" class="btn mouseButton btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn mouseButton invisible btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     mouseButton
   </button>
   
@@ -40,9 +40,11 @@
     body.onmousemove=(event)=>
     {
         event.clientY < 10 ?
-        mouseButton.onclick=(event1)=>{event1.target}: 
+        mouseButton.click():
         null;
     }
+
+   
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
